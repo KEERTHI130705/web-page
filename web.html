@@ -1,39 +1,31 @@
 <!DOCTYPE html>
-
 <html>
-
-
 
 <body style="font-size:25px;">
 
   <div align="center">
-   <img src="quiz.png"
-alt="Quiz cover" width="500" height="200">
-</div>
+    <img src="quiz.png" alt="Quiz cover" width="500" height="200">
+  </div>
 
- <h1>which one of the following in not a programming
- language of a computer?</h1>
+  <h1>Which one of the following is not a programming language of a computer?</h1>
 
-<ol>
-   <li>python</li>
-   <li>javascript</li>
-   <li>html</li>
-   <li>code.org</li>
+  <ol>
+    <li>Python</li>
+    <li>JavaScript</li>
+    <li>HTML</li>
+    <li>Code.org</li>
+  </ol>
 
-<form on input="answer.value=4>
+  <form oninput="answer.value = txtans.value == '4' ? 'Correct!' : 'Incorrect';">
+    <span>
+      <label>Enter answer:</label>
+      <input type="text" id="txtans">
+      <button type="button" onclick="answer.value = txtans.value == '4' ? 'Correct!' : 'Incorrect';">Click me!</button>
+      <br>
+      Correct answer is <output id="answer"></output>
+    </span>
+  </form>
 
-  <span>
-    <label>enter answer:</label>
-  <input type="text"id="txtans">
- <button type="button">click me!</button>
-correct answer is
-<outpt id="answer"></output
-</span>
-</form>
 </body>
-
-
-
-
 
 </html>
